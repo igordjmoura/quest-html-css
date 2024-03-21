@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins';
+    background: url(../images/bg-desktop.svg) var(--background-color) center no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-areas: "header header"
+        "about about";
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    grid-area: header;
+    padding: 25px 40px;
+}
+
+.header .logo img{
+    max-width: 100%;
+    width: 160px;
+}
+
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.about .image{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.about .info{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 80px 0 40px;
+    gap: 30px;
+
+}
+
+.about .info h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.about .info p{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.about .register-btn{
+    background-color: #fff;
+    color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.about .register-btn:hover{
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+
+.social a i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.social a i:hover{
+    color: var(--hover-color);
+}
